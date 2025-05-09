@@ -1,0 +1,27 @@
+<div style="font-family: Arial; text-align: center; max-width: 500px; margin: auto;">
+  <h3>Chave PIX (Copia e Cola):</h3>
+
+  <p style="word-break: break-word; background: #f4f4f4; padding: 12px; border-radius: 10px;">
+    00020126330014BR.GOV.BCB.PIX0111390410288545204000053039865802BR5901N6001C62070503***6304392B
+  </p>
+
+  <input type="text" id="pixInput" value="00020126330014BR.GOV.BCB.PIX0111390410288545204000053039865802BR5901N6001C62070503***6304392B" style="position: absolute; left: -9999px;" />
+
+  <button onclick="copiarPix()" style="margin: 15px; padding: 12px 20px; border-radius: 10px; border: none; background-color: #4CAF50; color: white; font-size: 16px; cursor: pointer;">
+    Copiar link do PIX!
+  </button>
+
+  <p id="confirmacao" style="color: green; display: none;">Link copiado para a área de transferência!</p>
+</div>
+
+<script>
+  function copiarPix() {
+    const input = document.getElementById("pixInput");
+    input.select();
+    document.execCommand("copy");
+
+    const msg = document.getElementById("confirmacao");
+    msg.style.display = "block";
+    setTimeout(() => { msg.style.display = "none"; }, 2000);
+  }
+</script>
