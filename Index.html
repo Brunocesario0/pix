@@ -1,9 +1,6 @@
-<div style="font-family: Arial; text-align: center; max-width: 500px; margin: auto;">
-  <h3>Chave PIX (Copia e Cola):</h3>
 
-  <p style="word-break: break-word; background: #f4f4f4; padding: 12px; border-radius: 10px;">
-    00020126330014BR.GOV.BCB.PIX0111390410288545204000053039865802BR5901N6001C62070503***6304392B
-  </p>
+<div style="font-family: Arial; text-align: center; max-width: 500px; margin: auto; padding: 20px;">
+  <h3>Pagamento via PIX</h3>
 
   <input type="text" id="pixInput" value="00020126330014BR.GOV.BCB.PIX0111390410288545204000053039865802BR5901N6001C62070503***6304392B" style="position: absolute; left: -9999px;" />
 
@@ -11,7 +8,19 @@
     Copiar link do PIX!
   </button>
 
-  <p id="confirmacao" style="color: green; display: none;">Link copiado para a área de transferência!</p>
+  <!-- QR Code -->
+  <div style="margin-top: 25px;">
+    <img src="qrcode-pix.png" alt="QR Code do Pix" style="max-width: 300px; width: 100%; height: auto;" />
+  </div>
+
+  <!-- Confirmação -->
+  <p id="confirmacao" style="color: green; display: none; margin-top: 20px;">Link copiado para a área de transferência!</p>
+
+  <!-- Chave Pix exibida no final -->
+  <h4 style="margin-top: 30px;">Chave PIX (Copia e Cola):</h4>
+  <p style="word-break: break-word; background: #f4f4f4; padding: 12px; border-radius: 10px;">
+    00020126330014BR.GOV.BCB.PIX0111390410288545204000053039865802BR5901N6001C62070503***6304392B
+  </p>
 </div>
 
 <script>
